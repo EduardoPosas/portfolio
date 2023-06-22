@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexander Pozas | Portfolio </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://csstools.github.io/normalize.css/11.0.0/normalize.css">
+    <link rel="stylesheet" href="/src/css/base.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/perfil.css">
 </head>
-<body>
 
-    
+<body>
+    <header class="header wrapper">
+        <a class="logo" href="#">
+            <img src="/src/images/Logo.svg" alt="logo alexander">
+        </a>
+        <nav class="navigation">
+            <ul class="navigation__menu">
+                <li class="navigation__item navigation__item--hidden">
+                    <a class="navigation__link" href="#">About Me</a>
+                </li>
+                <li class="navigation__item navigation__item--hidden">
+                    <a class="navigation__link" href="#">Skills</a>
+                </li>
+                <li class="navigation__item navigation__item--hidden">
+                    <a class="navigation__link" href="#">Hobbies</a>
+                </li>
+                <li class="navigation__item navigation__item--hidden">
+                    <a class="navigation__link" href="#">Education</a>
+                </li>
+                <li class="navigation__item navigation__item--hidden">
+                    <a class="navigation__link" href="#">Projects</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link navigation__link--bold"
+                        href="mailto:a.posas@outlook.com">a.posas@outlook.com</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="wrapper">
+        <div class="perfil">
+            <img class="perfil__image" src="/src/images/yo.jpg" alt="me">
+            <div class="perfil__information">
+                <div class="perfil__data">
+                    <h1 class="perfil__name">Hi! I am Alexander Pozas</h1>
+                    <p class="perfil__occupation">FrontEnd Developer</p>
+                </div>
+                <div class="social-media">
+                    <a class="social-media__links" href="#">
+                        <img class="social-media__logo" src="/src/images/github-logo.svg" alt="github">
+                    </a>
+                    <a class="social-media__links" href="#">
+                        <img class="social-media__logo" src="/src/images/linkedin-logo.svg" alt="linkedin">
+                    </a>
+                    <a class="social-media__links" href="#">
+                        <img class="social-media__logo" src="/src/images/instagram-logo.svg" alt="instagram">
+                    </a>
+                    <a class="social-media__links" href="#">
+                        <img class="social-media__logo" src="/src/images/fb-logo.svg" alt="instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
