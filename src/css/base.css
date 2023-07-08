@@ -1,9 +1,10 @@
 :root {
     --clr-primary: #f5f5f5;
     --clr-secondary: #EAF2FD;
-    --clr-accent: #2A7AE4;
+    --clr-accent: #2a7be5;
     --clr-dark: #464646;
-    
+    --clr-white: #FFF;
+
     --fs-big: 5.2rem;
     --fs-medium: 3.2rem;
     --fs-small: 2.2rem;
@@ -26,10 +27,12 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Raleway', sans-serif;
+    color: var(--clr-dark);
+    background: var(--clr-primary)
 }
 
 h1 {
-  font-size: 4.8rem;
+    font-size: 4.8rem;
 }
 
 h2 {
@@ -42,6 +45,7 @@ h3 {
 
 a {
     text-decoration: none;
+    color: var(--clr-dark);
 }
 
 img {
@@ -50,6 +54,14 @@ img {
 }
 
 .wrapper {
-    width: min(95% , 120rem);
+    width: min(90%, 120rem);
     margin-inline: auto;
+}
+
+.not-allowed {
+    opacity: 50%;
+}
+
+.not-allowed:hover{
+    cursor: not-allowed;
 }

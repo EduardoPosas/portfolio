@@ -14,36 +14,50 @@
     <link rel="stylesheet" href="/src/css/base.css">
     <link rel="stylesheet" href="/src/css/header.css">
     <link rel="stylesheet" href="/src/css/perfil.css">
+    <link rel="stylesheet" href="/src/css/about.css">
+    <link rel="stylesheet" href="/src/css/skills.css">
+    <link rel="stylesheet" href="/src/css/soft-skills.css">
+    <link rel="stylesheet" href="/src/css/education.css">
+    <link rel="stylesheet" href="/src/css/experience.css">
+    <link rel="stylesheet" href="/src/css/contact.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <link rel="stylesheet" href="/src/css/components/pill.css">
 </head>
 
 <body>
-    <header class="header wrapper">
-        <a class="logo" href="#">
-            <img src="/src/images/Logo.svg" alt="logo alexander">
-        </a>
-        <nav class="navigation">
-            <ul class="navigation__menu">
-                <li class="navigation__item navigation__item--hidden">
-                    <a class="navigation__link" href="#">About Me</a>
-                </li>
-                <li class="navigation__item navigation__item--hidden">
-                    <a class="navigation__link" href="#">Skills</a>
-                </li>
-                <li class="navigation__item navigation__item--hidden">
-                    <a class="navigation__link" href="#">Hobbies</a>
-                </li>
-                <li class="navigation__item navigation__item--hidden">
-                    <a class="navigation__link" href="#">Education</a>
-                </li>
-                <li class="navigation__item navigation__item--hidden">
-                    <a class="navigation__link" href="#">Projects</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link navigation__link--bold"
-                        href="mailto:a.posas@outlook.com">a.posas@outlook.com</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="wrapper header__container">
+            <div class="header__mobile">
+                <a class="logo" href="#">
+                    <img src="/src/images/Logo.svg" alt="logo alexander">
+                </a>
+
+                <img class="navigation__icon" src="/src/images/hamburger-btn.svg" alt="hamburguer menu">
+            </div>
+
+            <nav class="navigation">
+                <ul class="navigation__menu">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#about">About</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#hard-skills">Hard Skills</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#soft-skills">Soft Skills</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#education">Education</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#projects">Projects</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section class="wrapper">
@@ -55,23 +69,267 @@
                     <p class="perfil__occupation">FrontEnd Developer</p>
                 </div>
                 <div class="social-media">
-                    <a class="social-media__links" href="#">
-                        <img class="social-media__logo" src="/src/images/github-logo.svg" alt="github">
-                    </a>
-                    <a class="social-media__links" href="#">
-                        <img class="social-media__logo" src="/src/images/linkedin-logo.svg" alt="linkedin">
-                    </a>
-                    <a class="social-media__links" href="#">
-                        <img class="social-media__logo" src="/src/images/instagram-logo.svg" alt="instagram">
-                    </a>
-                    <a class="social-media__links" href="#">
-                        <img class="social-media__logo" src="/src/images/fb-logo.svg" alt="instagram">
-                    </a>
+                    <a class="social-media__links social-media__links--github" href="#">Github</a>
+                    <a class="social-media__links social-media__links--linkedin" href="#">Linkedin</a>
+                    <a class="social-media__links social-media__links--instagram" href="#">Instagram</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="about" id="about">
+        <div class="wrapper about__container">
+            <h2 class="about__title">About Me</h2>
+            <p class="about__text">I am an engineer in control and automation graduate of the National Institute
+                Polythecnic. I am 26 and have been fascinated by technology and web development. So by the time I
+                discovered this incredible world, I wanted to become a web developer. I consider myself a
+                well-organized, self-taught and responsible individual who enjoys learning new things on a daily basis.
+            </p>
+        </div>
+    </section>
+
+    <section class="wrapper skills" id="hard-skills">
+        <h2 class="skills__title">Hard Skills</h2>
+        <div class="skills__container">
+            <div class="skill">
+                <p class="skill__description skill__description--html">Html 5</p>
+            </div>
+            <div class="skill">
+                <p class="skill__description skill__description--css">CSS</p>
+            </div>
+            <div class="skill">
+                <p class="skill__description skill__description--js">Modern JS</p>
+            </div>
+            <div class="skill">
+                <p class="skill__description skill__description--react">React JS</p>
+            </div>
+            <div class="skill">
+                <p class="skill__description skill__description--node">Node JS</p>
+            </div>
+            <div class="skill">
+                <p class="skill__description skill__description--gulp">Gulp</p>
+            </div>
+            <div class="skill">
+                <p class="skill__description skill__description--sass">SASS</p>
+            </div>
+            <div class="skill">
+                <p class="skill__description skill__description--mysql">MySql</p>
+            </div>
+            <div class="skill">
+                <p class="skill__description skill__description--git">Git</p>
+            </div>
+            <div class="skill">
+                <p class="skill__description skill__description--figma">figma</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper soft-skills" id="soft-skills">
+        <h2 class="soft-skills__title">Soft Skills</h2>
+        <div class="soft-skills__container">
+            <div class="soft-skill">
+                <p class="soft-skill__description">Self-taught</p>
+            </div>
+            <div class="soft-skill">
+                <p class="soft-skill__description">Collaboration</p>
+            </div>
+            <div class="soft-skill">
+                <p class="soft-skill__description">Goal-setting</p>
+            </div>
+            <div class="soft-skill">
+                <p class="soft-skill__description">Responsible</p>
+            </div>
+            <div class="soft-skill">
+                <p class="soft-skill__description">Problem-solving</p>
+            </div>
+            <div class="soft-skill">
+                <p class="soft-skill__description">Curiosity</p>
+            </div>
+            <div class="soft-skill">
+                <p class="soft-skill__description">Flexibility</p>
+            </div>
+            <div class="soft-skill">
+                <p class="soft-skill__description">Discipline</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="education__title">Education and Certifications</h2>
+        <div class="wrapper">
+            <div class="education-cards">
+                <div class="education-card">
+                    <div class="education-card__image">
+                        <img src="/src/images/ipn-logo.svg" alt="ipn institute">
+                    </div>
+                    <div class="education-card__description">
+                        <h3 class="education-card__topic">Control and Automation Engineering</h3>
+                        <p class="education-card__academy"><span class="education-card__year">2018 - </span> National
+                            Polytechnic Institute</p>
+                        <a href="https://www.ipn.mx/oferta-educativa/educacion-superior/ver-carrera.html?lg=es&id=7&nombre=Ingenier%C3%ADa-en-Control-y-Automatizaci%C3%B3n" class="pill pill--primary" target="_blank">Program</a>
+                    </div>
+                </div> <!--education-card-->
+                <div class="education-card">
+                    <div class="education-card__image">
+                        <img src="/src/images/udemy-logo.svg" alt="udemy institute">
+                    </div>
+                    <div class="education-card__description">
+                        <h3 class="education-card__topic">Web Development</h3>
+                        <p class="education-card__academy"><span class="education-card__year">2020 - </span> Udemy</p>
+                        <a href="https://www.udemy.com/certificate/UC-3f939403-20e6-4e1f-a1ea-5879a5c54de3/" class="pill pill--primary" target="_blank">Certificate</a>
+                    </div>
+                </div> <!--education-card-->
+                <div class="education-card">
+                    <div class="education-card__image">
+                        <img src="/src/images/udemy-logo.svg" alt="udemy institute">
+                    </div>
+                    <div class="education-card__description">
+                        <h3 class="education-card__topic">Modern Javascript</h3>
+                        <p class="education-card__academy"><span class="education-card__year">2020 - </span> Udemy</p>
+                        <a href="https://www.udemy.com/certificate/UC-a6728cbf-ce30-438e-815c-4c027cb29fa0/" class="pill pill--primary" target="_blank">Certificate</a>
+                    </div>
+                </div> <!--education-card-->
+                <div class="education-card">
+                    <div class="education-card__image">
+                        <img src="/src/images/alura-logo.svg" alt="alura latam">
+                    </div>
+                    <div class="education-card__description">
+                        <h3 class="education-card__topic">Business Agility</h3>
+                        <p class="education-card__academy"><span class="education-card__year">2023 - </span> Alura Latam
+                        </p>
+                        <a href="https://app.aluracursos.com/degree/certificate/01fb4063-74e6-4e61-b0b8-08f4513ff528" class="pill pill--primary" target="_blank">Certificate</a>
+                    </div>
+                </div> <!--education-card-->
+                <div class="education-card">
+                    <div class="education-card__image">
+                        <img src="/src/images/alura-logo.svg" alt="alura latam">
+                    </div>
+                    <div class="education-card__description">
+                        <h3 class="education-card__topic">CSS Arquitecture</h3>
+                        <p class="education-card__academy"><span class="education-card__year">2023 - </span> Alura Latam
+                        </p>
+                        <a href="https://app.aluracursos.com/certificate/a-posas/arquitectura-css-descomplicando-los-problemas" class="pill pill--primary" target="_blank">Certificate</a>
+                    </div>
+                </div> <!--education-card-->
+                <div class="education-card">
+                    <div class="education-card__image">
+                        <img src="/src/images/alura-logo.svg" alt="alura latam">
+                    </div>
+                    <div class="education-card__description">
+                        <h3 class="education-card__topic">Oracle Next Education Program FrontEnd</h3>
+                        <p class="education-card__academy"><span class="education-card__year">En Curso - </span> Alura
+                            Latam</p>
+                        <a href="https://www.oracle.com/mx/education/oracle-next-education/" class="pill pill--primary" target="_blank">Program</a>
+                    </div>
+                </div> <!--education-card-->
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper experiences" id="projects">
+        <h2 class="experiences__title">Projects</h2>
+        <div class="experiences__container">
+            <div class="experience">
+                <div class="experience__image">
+                    <img src="/src/images/festival-musica-min.png" alt="music festival web page">
+                </div>
+                <div class="experience__content">
+                    <h3 class="experience__title">Music Festival</h3>
+                    <p class="experience__description">Developed in web certification</p>
+                    <a target="_blank" href="https://github.com/EduardoPosas/festivalMusica.git" class="pill pill--secondary">Repository</a>
+                    <a target="_blank" href="https://musicfestscss-portfolio.netlify.app/" class="pill pill--primary">Demo</a>
+                </div>
+            </div><!--experience-->
+            <div class="experience">
+                <div class="experience__image">
+                    <img src="/src/images/tienda-muebles-min.png" alt="furniture store web page">
+                </div>
+                <div class="experience__content">
+                    <h3 class="experience__title">Furniture Store</h3>
+                    <p class="experience__description">Developed in web certification</p>
+                    <a target="_blank" href="https://github.com/EduardoPosas/tiendaMuebles.git" class="pill pill--secondary">Repository</a>
+                    <a target="_blank" href="https://ecommerce-html-css-js-alex.netlify.app/" class="pill pill--primary">Demo</a>
+                </div>
+            </div><!--experience-->
+            <div class="experience">
+                <div class="experience__image">
+                    <img src="/src/images/seguimiento-veterinaria-min.png" alt="veterinary control web page">
+                </div>
+                <div class="experience__content">
+                    <h3 class="experience__title">Veterinary Control</h3>
+                    <p class="experience__description">Developed in modern js development</p>
+                    <a target="_blank" href="https://github.com/EduardoPosas/citas-react-vite.git" class="pill pill--secondary">Repository</a>
+                    <a target="_blank" href="https://magenta-mochi-81fe62.netlify.app/" class="pill pill--primary">Demo</a>
+                </div>
+            </div><!--experience-->
+            <div class="experience">
+                <div class="experience__image">
+                    <img src="/src/images/encriptador-texto-min.png" alt="text econder web page">
+                </div>
+                <div class="experience__content">
+                    <h3 class="experience__title">Text Encoder</h3>
+                    <p class="experience__description">Challenge Orcle</p>
+                    <a target="_blank" href="https://github.com/EduardoPosas/Encriptador.git" class="pill pill--secondary">Repository</a>
+                    <a target="_blank" href="https://eduardoposas.github.io/Encriptador/" class="pill pill--primary">Demo</a>
+                </div>
+            </div><!--experience-->
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="wrapper">
+            <div class="contact__container">
+                <div contact__form>
+                    <h2 class="contact__title">Contact Me</h2>
+                    <p class="contact__subtitle">¿Do you want to contact me?</p>
+                    <p class="contact__description">Please leave your data below and I'll contact you as soon as
+                        possible</p>
+                    <form class="form" action="/">
+                        <fieldset class="form__data">
+                            <legend>Contact Info</legend>
+
+                            <div class="field">
+                                <label class="field__title" for="name">Name:</label>
+                                <input class="field__input" type="text" id="name" placeholder="Insert Name" required>
+                                <p class="alert"></p>
+                            </div>
+                            <div class="field">
+                                <label class="field__title" for="email">Email:</label>
+                                <input class="field__input" type="email" id="email" placeholder="Insert Email" required>
+                                <p class="alert"></p>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form__message">
+                            <legend>Message body</legend>
+                            <div class="field">
+                                <label class="field__title" for="subject">Subject:</label>
+                                <input class="field__input" type="text" id="subject" placeholder="Add a subject"
+                                    required>
+                                <p class="alert"></p>
+                            </div>
+                            <div class="field">
+                                <label class="field__title" for="message">Message:</label>
+                                <textarea class="field__input" id="message" cols="30" rows="10"
+                                    placeholder="Describe your message" required></textarea>
+                                <p class="alert"></p>
+                            </div>
+                        </fieldset>
+
+                        <button class="experience__button experience__button--primary" type="submit"
+                            data-submit-btn>Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__description">Developed by <span>Alexander Pozas &copy;</span> All rights reserved</p>
+    </footer>
+
+
+    <script src="./src/js/index.js" type="module"></script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 .perfil {
     text-align: center;
+    padding: 0 0 3.2rem 0;
 }
 
 @media (min-width: 768px) {
@@ -67,8 +68,28 @@
 .social-media {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
-.social-media__logo {
-    height: 3rem;
-    aspect-ratio: 4/2;
+
+.social-media__links {
+    display: flex;
+    align-items: center;
+}
+
+.social-media__links::after {
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    margin-left: 0.5rem;
+    align-items: center;
+}
+
+.social-media__links--github::after {
+    content: url(/src/images/github-logo.svg);
+}
+.social-media__links--linkedin::after {
+    content: url(/src/images/linkedin-logo.svg);
+}
+.social-media__links--instagram::after {
+    content: url(/src/images/instagram-logo.svg);
 }

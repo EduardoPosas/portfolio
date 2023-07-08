@@ -1,0 +1,30 @@
+.about {
+    background: var(--clr-secondary);
+    padding:3.2rem 0;
+}
+
+@media (min-width: 768px) {
+    .about__container {
+        max-width: 80rem;
+    }
+    .about {
+        padding: 3.2rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about {
+        padding: 6.4rem;
+    }
+}
+
+.about__title {
+    margin-bottom: 1.6rem;
+    color: var(--clr-dark);
+    font-size: var(--fs-small);
+    text-align: center;
+}
+
+.about__text:not(:last-child) {
+    margin-bottom: 1.6rem;
+}

@@ -1,0 +1,28 @@
+.pill{
+    display: inline-block;
+    margin-top: 1.6rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 100vmin;
+    font-size: var(--fs-xsmall);
+    font-weight: 400;
+    transition: background 300ms ease;
+}
+
+.pill--primary {
+    background: var(--clr-accent);
+    color: var(--clr-white);
+}
+
+.pill--primary:hover {
+    background: hsl(214, 69%, 40%);
+}
+
+.pill--secondary {
+    /* background: var(--clr-white); */
+    color: var(--clr-accent);
+    border: 1px solid var(--clr-accent);
+}
+
+.pill--secondary:hover {
+    background: hsl(0, 0%, 85%);
+}

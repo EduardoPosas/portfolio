@@ -1,0 +1,8 @@
+.footer {
+    padding: 3.2rem;
+    text-align: center;
+}
+
+.footer__description span {
+    font-weight: bold;
+}

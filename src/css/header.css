@@ -1,32 +1,102 @@
 .header {
-    display:flex;
-    justify-content: space-between;
+    background: var(--clr-primary);
+    /* position: sticky;
+    top: 0; */
+}
+
+/* .header.sticking {
+    z-index: 1;
+    box-shadow: 0 13px 27px -5px rgb(50 50 93 / 0.25),
+    0 8px 16px -8px rgb(0 0 0 / 0.3);
+} */
+
+.header__container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 3.2rem 0;
+}
+
+@media (min-width: 768px) {
+    .header__container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.header__mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .header__mobile {
+        width: auto;
+    }
+}
+
+.navigation {
+    width: 100%;
+    opacity: 0;
+    visibility: collapse;
+    height: 0;
+    transition: opacity 300ms ease-in-out,
+        visibility 300ms ease-in-out;
+}
+
+.navigation.show {
+    margin-top: 3.2rem;
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .navigation {
+        margin-top: 0;
+        width: auto;
+        height: auto;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+    .navigation.show {
+        margin-top: 0;
+    }
 }
 
 .navigation__menu {
     padding: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .navigation__menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .navigation__item {
     list-style: none;
+    width: 100%;
+    text-align: center;
 }
 
-.navigation__item--hidden {
-    display: none;
-}
-
-@media (min-width: 992px) {
-    .navigation__item--hidden {
-        display: block;
+@media (min-width: 768px) {
+    .navigation__item {
+        width: auto;
     }
 }
 
 .navigation__link {
+    width: 100%;
+    display: block;
     font-size: var(--fs-xsmall);
     color: var(--clr-dark);
     padding: 1rem;
@@ -37,13 +107,22 @@
     background: var(--clr-secondary);
 }
 
-.navigation__link--bold {
-    font-weight: bold;
-}
-
 @media (min-width: 768px) {
     .navigation__link {
         font-size: var(--fs-text);
     }
 }
 
+.navigation__icon {
+    width: 3rem;
+}
+
+.navigation__icon:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .navigation__icon {
+        display: none;
+    }
+}

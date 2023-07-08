@@ -1,0 +1,101 @@
+.skills {
+    padding: 3.2rem 0;
+}
+
+.skills__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--fs-small);
+    margin-bottom: 3.2rem;
+}
+
+.skills__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+}
+
+@media (min-width: 768px) {
+    .skills__container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .skills__container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.skill {
+    padding: 1.6rem;
+    border-radius: 0.5rem;
+    background: #ffffff;
+    box-shadow: 9px 9px 28px #ebebeb,
+                -9px -9px 28px #ffffff;
+    transition: transform 300ms ease-in-out;
+}
+
+.skill:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.skill__description {
+    font-weight: bold;
+    text-align: center;
+    color: var(--clr-accent);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.6rem;
+}
+
+.skill__description::before {
+    content: '';
+    display: block;
+    width: 4rem;
+    margin-inline: auto;
+    filter: invert(33%) sepia(96%) saturate(1512%) hue-rotate(201deg) brightness(96%) contrast(86%);
+}
+
+.skill__description--html::before {
+    content: url(/src/images/html5-logo.svg);
+}
+
+.skill__description--css::before {
+    content: url(/src/images/css-logo.svg);
+}
+
+.skill__description--js::before {
+    content: url(/src/images/js-logo.svg);
+}
+
+.skill__description--react::before {
+    content: url(/src/images/reactjs-logo.svg);
+}
+
+.skill__description--node::before {
+    content: url(/src/images/nodejs-logo.svg);
+}
+
+.skill__description--gulp::before {
+    content: url(/src/images/gulp-logo.svg);
+}
+
+.skill__description--sass::before {
+    content: url(/src/images/sass-logo.svg);
+}
+
+.skill__description--mysql::before {
+    content: url(/src/images/mysql-logo.svg);
+}
+
+.skill__description--git::before {
+    content: url(/src/images/git-logo.svg);
+}
+
+.skill__description--figma::before {
+    content: url(/src/images/figma-logo.svg);
+}

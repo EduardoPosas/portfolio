@@ -1,0 +1,39 @@
+.soft-skills {
+    padding: 0 0 3.2rem 0;
+}
+
+.soft-skills__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--fs-small);
+    margin-bottom: 3.2rem;
+}
+
+@media (min-width: 768px) {
+    .soft-skills__container {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+        gap: 1rem;
+    }  
+}
+
+.soft-skill {
+    background: var(--clr-white);
+    padding: 1.2rem 1.6rem;
+    margin-bottom: 1.6rem;
+    border-radius: 100vmin;
+    text-align: center;
+    box-shadow: 9px 9px 28px #ebebeb,
+        -9px -9px 28px #ffffff;
+    transition: transform 300ms ease;
+}
+
+.soft-skill:hover {
+    transform: scale(1.1);
+}
+
+.soft-skill__description {
+    color: var(--clr-accent);
+    font-weight: bold;
+}
