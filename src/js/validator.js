@@ -31,7 +31,6 @@ const validators = {
 };
 
 const validateInput = (input) => {
-
     if (validators[input.id]) {
         validators[input.id](input);
     }
