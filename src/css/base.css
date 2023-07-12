@@ -65,3 +65,19 @@ img {
 .not-allowed:hover{
     cursor: not-allowed;
 }
+
+.diagonal-shape {
+    --skew-angle: -1.5deg;
+    --bg-gradient: #EAF2FD;
+    position: relative;
+    isolation: isolate;
+}
+
+.diagonal-shape::after {
+    content: '';
+    position: absolute;
+    background: var(--bg-gradient);
+    inset: 0;
+    transform: skewY(var(--skew-angle));
+    z-index: -1;
+}
