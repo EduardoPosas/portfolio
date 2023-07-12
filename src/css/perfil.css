@@ -76,20 +76,20 @@
     align-items: center;
 }
 
-.social-media__links::after {
+.social-media__links::before {
     content: '';
     display: inline-block;
     width: 2rem;
-    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     align-items: center;
 }
 
-.social-media__links--github::after {
-    content: url(/src/images/github-logo.svg);
+.social-media__links--github::before {
+    content: url(/src/images/logos/github-logo.svg);
 }
-.social-media__links--linkedin::after {
-    content: url(/src/images/linkedin-logo.svg);
+.social-media__links--linkedin::before {
+    content: url(/src/images/logos/linkedin-logo.svg);
 }
-.social-media__links--instagram::after {
-    content: url(/src/images/instagram-logo.svg);
+.social-media__links--instagram::before {
+    content: url(/src/images/logos/instagram-logo.svg);
 }

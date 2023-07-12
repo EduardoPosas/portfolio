@@ -1,6 +1,6 @@
 import smoothScrolling from "./smoothScrolling.js";
 import hamburguerMenu from "./hamburguerMenu.js";
-import validateInput, { validInputs } from "./validator.js";
+import validateInput from "./validator.js";
 
 const form = document.querySelector('.form');
 const submitButtom = document.querySelector('[data-submit-btn]');

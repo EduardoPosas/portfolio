@@ -12,9 +12,8 @@
 @media (min-width: 768px) {
     .soft-skills__container {
         display: grid;
-        place-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%),1fr));
+        gap: 1.6rem;
     }  
 }
 
@@ -22,11 +21,41 @@
     background: var(--clr-white);
     padding: 1.2rem 1.6rem;
     margin-bottom: 1.6rem;
-    border-radius: 100vmin;
+    border-radius: 0.5rem;
     text-align: center;
     box-shadow: 9px 9px 28px #ebebeb,
         -9px -9px 28px #ffffff;
     transition: transform 300ms ease;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+@media (min-width: 768px) {
+    .soft-skill {
+        justify-content: center;
+    }
+}
+
+.soft-skill:last-child {
+    margin-bottom: 0;
+}
+
+.soft-skill::before {
+    content: '';
+    background: url(../images/icons/check-icon.svg);
+    background-position: center;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    filter: invert(33%) sepia(96%) saturate(1512%) hue-rotate(201deg) brightness(96%) contrast(86%);
+}
+
+@media (min-width: 768px) {
+    .soft-skill {
+        margin-bottom: 0;
+    }
 }
 
 .soft-skill:hover {
