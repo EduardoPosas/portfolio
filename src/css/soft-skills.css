@@ -65,4 +65,5 @@
 .soft-skill__description {
     color: var(--clr-accent);
     font-weight: bold;
+    font-size: var(--fs-text);
 }

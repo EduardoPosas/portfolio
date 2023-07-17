@@ -8,7 +8,7 @@ const errorTypes = [
 const alertMessages = {
     name: {
         valueMissing: 'Campo obligatorio',
-        customError: 'El nombre debe contener más de 50 caracteres'
+        customError: 'El nombre debe tener más de 50 caracteres'
     },
     email: {
         valueMissing: 'Campo obligatorio',
@@ -16,11 +16,11 @@ const alertMessages = {
     },
     subject: {
         valueMissing: 'Campo obligatorio',
-        customError: 'El asunto debe contener más de 50 caracteres'
+        customError: 'El asunto debe tener más de 50 caracteres'
     },
     message: {
         valueMissing: 'Mensaje Obligatorio',
-        customError: 'El mensaje no debe contener más de 300 caracteres'
+        customError: 'El mensaje no debe tener más de 300 caracteres'
     }
 }
 

@@ -4,7 +4,7 @@
 
 @media (min-width: 768px) {
     .education-cards {
-        max-width: 80rem;
+        /* max-width: 80rem; */
         margin-inline: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -55,13 +55,19 @@
     font-size: var(--fs-text);
     font-weight: bold;
     margin-bottom: 1rem;
+    overflow: auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .education-card__topic {
-        min-height: 4rem;
+        min-height: 5rem;
     }
-}
+} */
 
 .education-card__academy {
     font-size: var(--fs-xsmall);

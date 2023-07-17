@@ -20,7 +20,7 @@
 .pill--secondary {
     /* background: var(--clr-white); */
     color: var(--clr-accent);
-    border: 1px solid var(--clr-accent);
+    border: 1px solid hsl(0, 0%, 85%);
 }
 
 .pill--secondary:hover {

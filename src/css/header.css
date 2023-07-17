@@ -107,12 +107,6 @@
     background: var(--clr-secondary);
 }
 
-@media (min-width: 768px) {
-    .navigation__link {
-        font-size: var(--fs-text);
-    }
-}
-
 .navigation__icon {
     width: 3rem;
 }

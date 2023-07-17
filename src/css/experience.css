@@ -63,8 +63,14 @@
 }
 
 .experience__description {
-    margin-bottom: 1rem;
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.experience__technology {
     font-size: var(--fs-xsmall);
+    border-bottom: solid 2px var(--clr-accent);
 }
 
 .experience__button {

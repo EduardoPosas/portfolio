@@ -1,6 +1,7 @@
 .footer {
     padding: 3.2rem;
     text-align: center;
+    font-size: var(--fs-text);
 }
 
 .footer__description span {

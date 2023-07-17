@@ -6,16 +6,8 @@
     .about__container {
         max-width: 80rem;
     }
-    .about {
-        padding: 3.2rem 0;
-    }
 }
 
-@media (min-width: 1024px) {
-    .about {
-        padding: 6.4rem;
-    }
-}
 
 .about__title {
     margin-bottom: 1.6rem;
@@ -24,6 +16,14 @@
     text-align: center;
 }
 
+.about__text {
+    font-size: var(--fs-text);
+}
+
 .about__text:not(:last-child) {
     margin-bottom: 1.6rem;
+}
+
+.about .experience__button {
+    margin-top: 2rem;
 }

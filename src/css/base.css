@@ -5,11 +5,17 @@
     --clr-dark: #464646;
     --clr-white: #FFF;
 
-    --fs-big: 5.2rem;
+    /* --fs-big: 5.2rem;
     --fs-medium: 3.2rem;
     --fs-small: 2.2rem;
     --fs-text: 1.6rem;
-    --fs-xsmall: 1.4rem;
+    --fs-xsmall: 1.4rem; */
+
+    --fs-big: clamp(2.2rem, 4vw + 1rem, 5.2rem);
+    --fs-medium: clamp(2.2rem, 4vw + 1rem, 3.2rem);
+    --fs-small: clamp(2rem, 1.5vw + 0.5rem, 3rem);
+    --fs-text: clamp(1.6rem, 1.5vw + 0.25rem, 2rem);
+    --fs-xsmall: clamp(1.4rem, 1.5vw + 0.25rem , 1.6rem);
 }
 
 html {
