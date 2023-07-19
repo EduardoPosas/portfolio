@@ -15,7 +15,7 @@
     --fs-medium: clamp(2.2rem, 4vw + 1rem, 3.2rem);
     --fs-small: clamp(2rem, 1.5vw + 0.5rem, 3rem);
     --fs-text: clamp(1.6rem, 1.5vw + 0.25rem, 2rem);
-    --fs-xsmall: clamp(1.4rem, 1.5vw + 0.25rem , 1.6rem);
+    --fs-xsmall: clamp(1.4rem, 1.5vw + 0.25rem, 1.6rem);
 }
 
 html {
@@ -68,7 +68,7 @@ img {
     opacity: 50%;
 }
 
-.not-allowed:hover{
+.not-allowed:hover {
     cursor: not-allowed;
 }
 
@@ -86,4 +86,42 @@ img {
     inset: 0;
     transform: skewY(var(--skew-angle));
     z-index: -1;
+}
+
+[data-aos="fade-up-mq-right"] {
+    opacity: 0;
+    transform: translateY(100%);
+    transition-property: transform, opacity;
+
+    &.aos-animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    @media screen and (min-width: 768px) {
+        transform: translateX(-100%);
+
+        &.aos-animate {
+            transform: translateX(0);
+        }
+    }
+}
+
+[data-aos="fade-up-mq-left"] {
+    opacity: 0;
+    transform: translateY(100%);
+    transition-property: transform, opacity;
+
+    &.aos-animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    @media screen and (min-width: 768px) {
+        transform: translateX(100%);
+
+        &.aos-animate {
+            transform: translateX(0);
+        }
+    }
 }

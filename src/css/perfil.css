@@ -67,7 +67,6 @@
     display: inline-block;
     width: 2rem;
     margin-right: 0.5rem;
-    /* align-items: center; */
 }
 
 .social-media__links--github::before {
@@ -76,6 +75,6 @@
 .social-media__links--linkedin::before {
     content: url(/src/images/logos/linkedin-logo.svg);
 }
-.social-media__links--instagram::before {
-    content: url(/src/images/logos/instagram-logo.svg);
+.social-media__links--curriculum::before {
+    content: url(/src/images/logos/file-logo.svg);
 }
