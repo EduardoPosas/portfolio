@@ -20,7 +20,7 @@ Se utilizo AOS (Animation On Scroll ) para agregar cierta interactividad al proy
 
 ## Screenshots
 
-![Portfolio - mobile](/src/images/page/portfolio-mobile-min.png)
+![Portfolio - mobile](/src/images/page/portfolio-mobile-min.jpeg)
 
 ![Portfolio - tablet](/src/images/page/portfolio-tablet-min.jpeg)
 
