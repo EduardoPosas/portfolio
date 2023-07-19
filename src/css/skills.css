@@ -61,41 +61,41 @@
 }
 
 .skill__description--html::before {
-    content: url(/src/images/logos/html5-logo.svg);
+    content: url(src/images/logos/html5-logo.svg);
 }
 
 .skill__description--css::before {
-    content: url(/src/images/logos/css-logo.svg);
+    content: url(src/images/logos/css-logo.svg);
 }
 
 .skill__description--js::before {
-    content: url(/src/images/logos/js-logo.svg);
+    content: url(src/images/logos/js-logo.svg);
 }
 
 .skill__description--react::before {
-    content: url(/src/images/logos/reactjs-logo.svg);
+    content: url(src/images/logos/reactjs-logo.svg);
 }
 
 .skill__description--node::before {
-    content: url(/src/images/logos/nodejs-logo.svg);
+    content: url(src/images/logos/nodejs-logo.svg);
 }
 
 .skill__description--gulp::before {
-    content: url(/src/images/logos/gulp-logo.svg);
+    content: url(src/images/logos/gulp-logo.svg);
 }
 
 .skill__description--sass::before {
-    content: url(/src/images/logos/sass-logo.svg);
+    content: url(src/images/logos/sass-logo.svg);
 }
 
 .skill__description--mysql::before {
-    content: url(/src/images/logos/mysql-logo.svg);
+    content: url(src/images/logos/mysql-logo.svg);
 }
 
 .skill__description--git::before {
-    content: url(/src/images/logos/git-logo.svg);
+    content: url(src/images/logos/git-logo.svg);
 }
 
 .skill__description--figma::before {
-    content: url(/src/images/logos/figma-logo.svg);
+    content: url(src/images/logos/figma-logo.svg);
 }

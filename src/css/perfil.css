@@ -70,11 +70,11 @@
 }
 
 .social-media__links--github::before {
-    content: url(/src/images/logos/github-logo.svg);
+    content: url(src/images/logos/github-logo.svg);
 }
 .social-media__links--linkedin::before {
-    content: url(/src/images/logos/linkedin-logo.svg);
+    content: url(src/images/logos/linkedin-logo.svg);
 }
 .social-media__links--curriculum::before {
-    content: url(/src/images/logos/file-logo.svg);
+    content: url(src/images/logos/file-logo.svg);
 }
