@@ -68,6 +68,7 @@
 
 .experience__description {
     display: flex;
+    flex-wrap: wrap;
     gap: 1.6rem;
     align-items: center;
 }
