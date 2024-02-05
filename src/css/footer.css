@@ -2,6 +2,7 @@
     padding: 3.2rem;
     text-align: center;
     font-size: var(--fs-text);
+    background-color: #EAF2FD;
 }
 
 .footer__description span {
